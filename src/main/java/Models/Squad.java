@@ -1,3 +1,4 @@
+package Models;
 
 public class Squad {
 private int squadId;

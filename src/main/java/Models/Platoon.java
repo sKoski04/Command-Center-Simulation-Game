@@ -1,3 +1,5 @@
+package Models;
+
 public class Platoon  {
     private int id;
     private String  name;

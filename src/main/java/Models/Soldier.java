@@ -1,3 +1,4 @@
+package Models;
 
 public class Soldier {
 	private int badgeNumber;

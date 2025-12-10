@@ -1,7 +1,11 @@
+package CRUD;
+
 import java.sql.PreparedStatement;
 import java.util.List;
+import Models.Squad;
+import Services.DatabaseConnect;
 
-public class SquadCrud implements GeneralizedCrud <Squad> {
+public class SquadCrud implements GeneralizedCrud<Squad> {
 
 	@Override
 	public void create(Squad squad) {
@@ -19,7 +23,7 @@ public class SquadCrud implements GeneralizedCrud <Squad> {
 	        stmt.setInt(7, squad.getManpower());
 	   ;
 	        stmt.executeUpdate(); 
-	        System.out.print("Squad Created!");
+	        System.out.print("Models.Squad Created!");
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	        System.out.print("Error creating squad, check status");

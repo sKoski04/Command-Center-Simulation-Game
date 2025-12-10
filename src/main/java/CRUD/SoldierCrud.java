@@ -1,7 +1,10 @@
+package CRUD;
+
 import java.sql.PreparedStatement;
 import java.util.List;
-
-public class SoldierCrud implements GeneralizedCrud <Soldier> {
+import Models.Soldier;
+import Services.DatabaseConnect;
+public class SoldierCrud implements GeneralizedCrud<Soldier> {
 
 	@Override
 	public void create(Soldier soldier) {
@@ -19,7 +22,7 @@ public class SoldierCrud implements GeneralizedCrud <Soldier> {
 	        stmt.setInt(8, soldier.getSquadId());
 	        stmt.setString(9, soldier.getRank());
 	        stmt.executeUpdate(); 
-	        System.out.print("Soldier Created!");
+	        System.out.print("Models.Soldier Created!");
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	        System.out.print("Error creating soldier, check status");
@@ -34,15 +37,19 @@ public class SoldierCrud implements GeneralizedCrud <Soldier> {
 			
 		  
 		        stmt.setInt(1, soldier.getAge());
-		  
 		        stmt.setString(2, soldier.getCallsign());
 		        stmt.setString(3, soldier.getRole());
 		        stmt.setBoolean(4, soldier.getStatus());
 		        stmt.setInt(5, soldier.getSquadId());
 		        stmt.setString(6, soldier.getRank());
 		        stmt.setInt(7, soldier.getBadgeNumber());
-		        stmt.executeUpdate(); 
-		        System.out.print("Soldier updated!");
+
+
+		        stmt.executeUpdate();
+
+
+
+		        System.out.print("Models.Soldier updated!");
 		    } catch (Exception e) {
 		        e.printStackTrace();
 		        System.out.print("Error updating soldier, check status");
@@ -60,7 +67,7 @@ public class SoldierCrud implements GeneralizedCrud <Soldier> {
 		  
 		   
 		        stmt.executeUpdate(); 
-		        System.out.print("Soldier deleted!");
+		        System.out.print("Models.Soldier deleted!");
 		    } catch (Exception e) {
 		        e.printStackTrace();
 		        System.out.print("Error deleting soldier, check status");

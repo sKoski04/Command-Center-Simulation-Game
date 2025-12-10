@@ -1,3 +1,5 @@
+package CRUD;
+
 import java.util.List;
 
 public interface GeneralizedCrud <T> {

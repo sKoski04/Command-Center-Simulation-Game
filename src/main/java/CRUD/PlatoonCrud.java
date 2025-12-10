@@ -1,7 +1,11 @@
+package CRUD;
+
 import java.sql.PreparedStatement;
 import java.util.List;
+import Models.Platoon;
+import Services.DatabaseConnect;
 
-public class PlatoonCrud implements GeneralizedCrud <Platoon> {
+public class PlatoonCrud implements GeneralizedCrud<Platoon> {
     @Override
     public void create(Platoon platoon) {
 DatabaseConnect connection = new DatabaseConnect();
@@ -39,7 +43,7 @@ DatabaseConnect connection = new DatabaseConnect();
 
 
             stmt.executeUpdate();
-            System.out.print("Platoon updated!");
+            System.out.print("Models.Platoon updated!");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.print("Error updating platoon, check status");
