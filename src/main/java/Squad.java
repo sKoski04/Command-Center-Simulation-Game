@@ -2,16 +2,16 @@
 public class Squad {
 private int squadId;
 private String name;
-private String abbrevation;
+private String abbreviation;
 private String description;
 private String squadLeader;
 private int platoonId;
 private int manpower;
 
-public Squad(int squadId, String name,String abbrevation,String description,String squadLeader,int platoonId,int manpower) {
+public Squad(int squadId, String name,String abbreviation,String description,String squadLeader,int platoonId,int manpower) {
 	this.squadId=squadId;
 	this.name=name;
-	this.abbrevation=abbrevation;
+	this.abbreviation=abbreviation;
 	this.description=description;
 	this.squadLeader=squadLeader;
 	this.platoonId=platoonId;
@@ -25,8 +25,8 @@ public String getName() {
 	return this.name;
 	
 }
-public String getAbbrevation() {
-	return this.abbrevation;
+public String getAbbreviation() {
+	return this.abbreviation;
 	
 }
 public String getDescription() {
