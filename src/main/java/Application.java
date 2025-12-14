@@ -1,12 +1,10 @@
-import CRUD.CompanyCrud;
-import CRUD.PlatoonCrud;
-import CRUD.SoldierCrud;
-import CRUD.SquadCrud;
+import CRUD.*;
 import Models.Company;
 import Models.Platoon;
 import Models.Soldier;
 import Models.Squad;
 import Models.Company;
+import Models.Battalion;
 
 public class Application {
 
@@ -16,7 +14,9 @@ public class Application {
     SquadCrud crud2=new SquadCrud();
     PlatoonCrud platoonCrud=new PlatoonCrud();
     CompanyCrud companyCrud=new CompanyCrud();
+    BattalionCrud battalionCrud=new BattalionCrud();
 
+    Battalion testBattalion=new Battalion(2,"test","test","test",1);
     Squad squad=new Squad(3, "squad1", "sq1", "description", "squad commander", 1, 4);
     Soldier testSoldier=new Soldier(1010, "Matias petäistö", 34, "Male", "Solttukönsikäs", "Machinegun", true, 0, "General");
     Soldier testSoldier2=new Soldier(1010, "Matias petäistö", 34, "Male", "Solttukönsikäs", "Machinegun", true, 0, "Sergeant");
@@ -24,7 +24,7 @@ public class Application {
         Company company=new Company(2,"test","test","test",1);
 
 
-companyCrud.delete(company);
+battalionCrud.delete(testBattalion);
 
   
 
