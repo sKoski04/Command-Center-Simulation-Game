@@ -3,7 +3,7 @@ package CRUD;
 import java.sql.PreparedStatement;
 import java.util.List;
 import Models.Platoon;
-import Services.DatabaseConnect;
+import Connections.DatabaseConnect;
 
 public class PlatoonCrud implements GeneralizedCrud<Platoon> {
     @Override

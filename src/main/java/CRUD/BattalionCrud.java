@@ -1,7 +1,7 @@
 package CRUD;
 
 import Models.Battalion;
-import Services.DatabaseConnect;
+import Connections.DatabaseConnect;
 
 import java.sql.PreparedStatement;
 import java.util.List;

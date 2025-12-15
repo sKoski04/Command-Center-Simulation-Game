@@ -3,7 +3,7 @@ package CRUD;
 import java.sql.PreparedStatement;
 import java.util.List;
 import Models.Soldier;
-import Services.DatabaseConnect;
+import Connections.DatabaseConnect;
 public class SoldierCrud implements GeneralizedCrud<Soldier> {
 
 	@Override

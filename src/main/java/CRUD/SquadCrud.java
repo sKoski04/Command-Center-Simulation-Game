@@ -3,7 +3,7 @@ package CRUD;
 import java.sql.PreparedStatement;
 import java.util.List;
 import Models.Squad;
-import Services.DatabaseConnect;
+import Connections.DatabaseConnect;
 
 public class SquadCrud implements GeneralizedCrud<Squad> {
 
