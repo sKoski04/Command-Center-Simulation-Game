@@ -1,44 +1,28 @@
-# Command Center – Simulation Game (Relational database training)
+# Command Center – Backend Simulation (Relational Database Training)
 
 ## Overview
-Command Center is a backend-driven military command simulation.
-The player progresses from company-level command to higher strategic levels.
+Command Center is a backend-focused simulation project designed to practice relational database design and multi-layered architecture. The game simulates hierarchical decision-making from company-level to strategic levels.
 
-The project focuses on:
-- backend architecture
-- relational database design
+## Key Contributions & Learning
 
+Designed and implemented a relational database with hierarchical relationships (Soldier → Squad → Platoon → Company → Battalion → Brigade)
+
+Developed DAO and logic layers in Java using JDBC
+
+Practiced multi-layered backend architecture and database-driven application design
+
+Implemented CRUD operations and queries using SQL
 
 ## Tech Stack
-- Java (pure JDBC)
-- PostgreSQL
-- SQL
 
+Java (JDBC) – DAO and logic layer implementation
 
-## Architecture
-The project is structured into clear layers:
+PostgreSQL – relational database schema design with foreign key relationships
 
-- Database (PostgreSQL)
-- DAO / CRUD layer (JDBC)
-- Logic layer
+SQL – CRUD operations and data handling
 
+## Future Extensions
 
-## Database Design
-The database models a hierarchical military structure:
-Soldier → Squad → Platoon → Company → Battalion → Brigade. 
-I chose this theme since the relationships are easy to understand and simple enough to implement for a training project.
+Extend logic layer to simulate strategic decision-making
 
-
-All relationships are explicitly handled via foreign keys.
-
-## Game Concept  (Possible future implementation)
-The game simulates decision-making at different command levels.
-Early gameplay focuses on logistics and readiness.
-Later gameplay introduces combat and strategic choices.
-(LATE 2026)
-
-## Project Status
-- CRUD layer completed
-- Logic layer in progress
-- Game logic planned
-- GUI (future)
+Implement GUI for interactive gameplay
